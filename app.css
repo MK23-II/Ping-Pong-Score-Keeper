@@ -70,3 +70,11 @@ button[type="reset"] {
     border-color: #888;
     outline: 0;
 }
+
+.playerOne:disabled, .playerTwo:disabled {
+    background-color: #666;
+    color: #1c1f1d;
+    cursor: not-allowed;
+  }
+
+
