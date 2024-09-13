@@ -61,6 +61,10 @@ legend {
     background-color: #97db44 ;
 }
 
+.scoreOne, .scoreTwo {
+    font-size: 3rem;
+}
+
 button[type="reset"] {
     background-color: red;
 }

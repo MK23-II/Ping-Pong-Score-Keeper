@@ -33,6 +33,8 @@ firstPlayerButton.addEventListener('click', function () {
         secondPlayerButton.disabled = true;
         let winAlert = 'PLAYER ONE WINS!';
         winner.textContent = winAlert;
+        playerOneScore.style.color = 'green';
+        playerTwoScore.style.color = 'red';
       }
 });
 
@@ -47,6 +49,8 @@ secondPlayerButton.addEventListener('click', function () {
         firstPlayerButton.disabled = true;
         let winAlert = 'PLAYER TWO WINS!';
         winner.textContent = winAlert;
+        playerOneScore.style.color = 'red';
+        playerTwoScore.style.color = 'green';
       }
 });
 
@@ -61,6 +65,8 @@ resetButton.addEventListener('click', function (e) {
     secondPlayerButton.disabled = false;
     winner.textContent = "";
     result.textContent = "";
+    playerOneScore.style.color = '';
+    playerTwoScore.style.color = '';
   });
 
 
