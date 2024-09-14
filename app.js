@@ -5,6 +5,10 @@ let result = document.querySelector('.result');
 pointsSelect.addEventListener('change', (event) => {
     scoreLimit = parseInt(event.target.value); //convert to number
     result.textContent = `You chose ${scoreLimit}`;
+    playerOneClicks = 0;
+    playerTwoClicks = 0;
+    playerOneScore.textContent = 0;
+    playerTwoScore.textContent = 0;
 });
 
 //add score
@@ -55,7 +59,9 @@ secondPlayerButton.addEventListener('click', function () {
 });
 
 //reset score back to 0
-resetButton.addEventListener('click', function (e) {
+resetButton.addEventListener('click', resetChange);
+
+function resetChange() {
     scoreLimit = 0;
     playerOneClicks = 0;
     playerTwoClicks = 0;
@@ -67,10 +73,7 @@ resetButton.addEventListener('click', function (e) {
     result.textContent = "";
     playerOneScore.style.color = '';
     playerTwoScore.style.color = '';
-  });
-
-
-
+}
 
 
 
